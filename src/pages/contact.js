@@ -26,22 +26,21 @@ const ContactPage = () => {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                 </div>
 
-                <form method="post" name="contact" data-netlify-recaptcha="true" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true">
                     
                     <label>Name</label>
-                    <input className={ContactStyles.form_style} name="name" placeholder="Name" type="text" required="required"/>
+                    <input className={ContactStyles.form_style} name="name" placeholder="Name" type="text" />
 
                     <label>Last name</label>
-                    <input className={ContactStyles.form_style} name="lastname" placeholder="Last name" type="text" required="required"/>
+                    <input className={ContactStyles.form_style} name="lastname" placeholder="Last name" type="text" />
 
                     <label>Email</label>
-                    <input className={ContactStyles.form_style} name="email" placeholder="Email" type="email" required="required"/>
+                    <input className={ContactStyles.form_style} name="email" placeholder="Email" type="email" />
 
                     <label>Message</label>
-                    <textarea className={ContactStyles.form_style} name="message" placeholder="Leave your message..." required="required" />
+                    <textarea className={ContactStyles.form_style} name="message" placeholder="Leave your message..."/>
 
-                    <div data-netlify-recaptcha="true"></div>
-                    <button>Send</button>
+                    <button type="submit">Send</button>
                 </form>
             </section>
 
