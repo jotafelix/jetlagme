@@ -26,8 +26,8 @@ const ContactPage = () => {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                 </div>
 
-                <form name="contact" method="POST" data-netlify="true">
-                    
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
                     <label>Name</label>
                     <input className={ContactStyles.form_style} name="name" placeholder="Name" type="text" />
 
