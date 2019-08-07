@@ -1,8 +1,31 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+require('dotenv').config({
+  path: `.env`,
+});
+
+const guideQuery = `
+{
+  allContentfulGuidePost {
+    nodes {
+      title
+      body {
+        content {
+          content {
+            value
+          }
+        }
+      }
+    }
+  }
+}`;
+
+
+const queries = [
+
+  {
+    query: guideQuery,
+    transformer: ({ data }) => data.allContentfulGuidePost.nodes,
+  }
+];
 
 module.exports = {
     siteMetadata:{
@@ -10,6 +33,16 @@ module.exports = {
         author: 'Felix Gonzalo'
     },
     plugins: [
+      {
+        resolve: `gatsby-plugin-algolia`,
+        options: {
+          appId: process.env.ALGOLIA_APP_ID,
+          apiKey: process.env.ALGOLIA_API_KEY,
+          indexName: process.env.ALGOLIA_INDEX_NAME,
+          queries,
+          chunkSize: 1000,
+        },
+      },
       {
         resolve: `gatsby-plugin-emotion`,
         options: {

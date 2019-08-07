@@ -1,8 +1,7 @@
-@import "./variables.module.scss";
-
 @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 
 
 html {
@@ -13,4 +12,5 @@ body {
     margin: 0;
     background-color: #f7f7f7;
     width: 100%;
+    box-sizing: border-box;
 }

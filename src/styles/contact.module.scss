@@ -1,0 +1,170 @@
+.main{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    h2{
+        font-weight: bolder;
+        margin-top: 3rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+form{
+    
+    width: 100%;
+
+    .form_style{
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        margin: 1rem 0;
+    }
+
+    button{
+        color: white;
+        font-size: 20px;
+        margin-right: 1.3rem;
+        text-decoration: none;
+        border: none;
+        background-color: #4CAF50;
+        border-radius: 3px;
+        padding: .8rem 2rem;
+        transition: all 0.5s;
+    
+        &:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(rgb(71, 177, 75), 0.2);
+        }
+    }
+}
+
+.section_social{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 0;
+    margin: 0;
+
+    .social_box{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //max-width: calc(24.75% - 1rem);
+        width: calc(24.75% - 1rem);
+        color: rgb(51, 52, 56);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px;
+        position: relative;
+        padding: 2rem;
+        border-radius: 0.4rem;
+        transition: all 0.4s ease 0s;
+        text-align: center;
+        margin: 3rem auto;
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &__text{
+            font-size: 1rem;
+        }
+
+        &__icon{
+            font-size: 4rem;
+            
+        }
+    }
+}
+
+
+.github{
+
+    &:hover{
+
+        background-color: rgb(36, 41, 46);
+        color: rgb(240, 240, 240);
+    }
+        
+}
+
+.personal_site{
+
+    &:hover{
+
+        background-color: rgb(36, 41, 46);
+        color: rgb(240, 240, 240);
+    }
+        
+}
+
+.instagram{
+            
+    &:hover {
+
+        background-image: linear-gradient(45deg, rgb(247, 235, 76) 0%, rgb(238, 42, 123) 29%, rgb(76, 106, 255) 100%);
+        color: rgb(240, 240, 240);
+    }
+}
+
+@media (max-width: 700px){
+
+    .main{
+        width: 80%;
+        margin: 0 auto;
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+    form{
+    
+        width: 100%;
+    
+        .form_style{
+            
+            width: 90%;
+        
+        }
+    }
+
+    .section_social{
+
+        flex-direction: column;
+        
+    
+        .social_box{
+            
+            width: 80%;
+            margin: 1.5rem auto;
+            
+            
+        }
+
+
+    }
+
+
+}

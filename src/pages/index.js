@@ -56,7 +56,7 @@ const IndexPage = () => {
 
                     <div className={indexStyles.feature_box}>
                         <IoMdPaperPlane className={indexStyles.feature_box__icon} />
-                        <h3 className={indexStyles.heading_tertiary}>Explore the world</h3>
+                        <h3 className={indexStyles.heading_tertiary}>Pro tips</h3>
                         <p className={indexStyles.feature_box__text}>
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quo sint excepturi.
                         </p>
@@ -64,7 +64,7 @@ const IndexPage = () => {
 
                     <div className={indexStyles.feature_box}>
                         <IoMdMap className={indexStyles.feature_box__icon} />
-                        <h3 className={indexStyles.heading_tertiary}>Explore the world</h3>
+                        <h3 className={indexStyles.heading_tertiary}>Travel Guides</h3>
                         <p className={indexStyles.feature_box__text}>
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quo sint excepturi.
                         </p>
@@ -74,7 +74,7 @@ const IndexPage = () => {
 
 
                 <section className={indexStyles.section_travel_guides}>
-                    <h2 className={indexStyles.heading_secundary}>Our Travel Guides</h2>
+                    <h2 className={indexStyles.heading_secundary} id="travelguides">Our Travel Guides</h2>
                     <span className={indexStyles.heading_line} ></span>
                     <div className={indexStyles.section_posts}>
                         <ol className={indexStyles.posts}>
@@ -100,9 +100,9 @@ const IndexPage = () => {
 
                                         <div className={indexStyles.utility_info}>
                                             <ul className={indexStyles.utility_list}>
-                                            <li className={indexStyles.comments}>12</li>
                                             <li className={indexStyles.date}>{edge.node.publishedDate}</li>
                                             </ul>
+                                            
                                         </div>
 
                                         <div className={indexStyles.gradient_overlay}></div>

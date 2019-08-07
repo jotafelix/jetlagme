@@ -1,30 +1,33 @@
 .header{
     width: 100%;
-    height: 5rem;
+    height: 40vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     position: relative;
-    background-color: black;
+   
     
 }
 
 .header_nav{
     width: 100%;
+    height: 5rem;
     border-bottom: 1px solid rgba(white, 0.3);
     z-index: 1;
+    background: linear-gradient(45deg, rgba(38, 44, 65, .2) 0%, rgba(70, 80, 122, .2) 100%);
+    position: relative;
 
     .logo{
         height: 3rem;
         position: absolute;
-        top: 20%;
+        top: 23%;
         left: 10%;
         z-index: 1;
     }
 
     nav{ 
         position: absolute;
-        top: 30%;
+        top: 36%;
         right: 10%;
         z-index: 1;
     }
@@ -37,50 +40,64 @@
     
     .nav-item {
         color: #ddd7d7;
-        font-size: 1.5rem;
+        font-size: 20px;
         margin-right: 1.3rem;
         text-decoration: none;
+        border: none;
+        background-color: #4CAF50;
+        border-radius: 10px;
+        padding: .8rem 2rem;
+        transition: all 0.5s;
     
         &:hover{
-            color: #999999;
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(rgb(71, 177, 75), 0.2);
         }
     
-        &-active{
-            color: #777777;
-        }
     }
 }
 
 
 .header_text{
     position: absolute;
-    top: 40%;
-    left: 10%;
+    display: block;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 3rem;
     z-index: 1;
 
     &_main{
         font-size: 3rem;
         z-index: 1;
-        padding-top: 2rem;
+        text-align: center;
     }
 
     &_second{
-        font-size: .8rem;
-        display: inline-block;
+        font-size: 1rem;
+        display: block;
         z-index: 1;
         text-transform: uppercase;
         margin-top: 1.5rem;
         padding-top: 2rem;
         border-top: 1px solid rgba(white, 0.3);
-        text-align: left;
+        text-align: center;
+        color: rgb(168, 184, 225);
     }
     
 
 }
 
+@media (max-width: 600px){
+
+    .header_text{
+        
+        &_main{
+            font-size: 2rem;
+        }
+    
+    }
 
 
-
+}
 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import HeaderGuides from './header-guides'
 import Footer from './footer'
 import '../styles/index.scss'
 import layoutGuideStyle from '../styles/layout.module.scss'
+import HeaderGuides from '../components/header-guides'
 
 const LayoutGuides = (props) => {
     return(
