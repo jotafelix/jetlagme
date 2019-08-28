@@ -34,16 +34,6 @@ module.exports = {
     },
     plugins: [
       {
-        resolve: `gatsby-plugin-algolia`,
-        options: {
-          appId: process.env.ALGOLIA_APP_ID,
-          apiKey: process.env.ALGOLIA_API_KEY,
-          indexName: process.env.ALGOLIA_INDEX_NAME,
-          queries,
-          chunkSize: 1000,
-        },
-      },
-      {
         resolve: `gatsby-plugin-emotion`,
         options: {
           // Accepts all options defined by `babel-plugin-emotion` plugin.
